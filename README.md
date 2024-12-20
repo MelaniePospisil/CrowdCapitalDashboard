@@ -1,5 +1,23 @@
 # CrowdCapital Investment Dashboard
 
+## 01 token gen
+This part of the CrowdCapital Investment Dashboard script is responsible for generating secure JWT (JSON Web Tokens) for user authentication and creating QR codes that embed these tokens. The tokens and QR codes are used to facilitate user access to the platform through a secure and convenient method.
+
+### Functionality
+- **Token Generation:** The script generates 350 unique JWTs using a predefined secret key. Each token is valid for a limited time and includes permissions for both reading and writing.
+- **CSV Export:** After generating the tokens, they are saved into a CSV file named `tokens.csv` for easy distribution or further processing.
+- **QR Code Generation:** For each token, a QR code is generated. These QR codes link to a specified URL with the token as a parameter, allowing users to access the platform by scanning the code.
+- **Base64 Encoding:** QR codes are stored as Base64 strings, facilitating their embedding in web pages or other media without the need for additional image files.
+
+## 02 base64 to img 
+This portion of the script handles the extraction of QR codes from a CSV file and the storage of these codes as PNG images in a designated folder. This is particularly useful for offline access or physical distribution.
+
+### Functionality
+
+- **CSV Loading:** Loads a CSV file containing encoded QR codes and associated user IDs. The path to the CSV file must be specified.
+- **Directory Creation:** Automatically creates a directory to store the QR code images if it doesn't already exist.
+- **Image Saving:** Decodes each QR code from Base64 format and saves it as a PNG image file. Each file is named after the corresponding user ID for easy identification.
+
 ## Overview
 This Python application is designed to provide a dynamic dashboard for visualizing investments and other key performance indicators for our START Munich investment app for pitching events using Streamlit. The app fetches the data from NocoDB, processes it, and visualizes it using Matplotlib and Streamlit.
 
