@@ -1,3 +1,10 @@
+# Crowd Capital in General 
+
+Our app engages audience and jury members at pitching events by distributing playing cards with QR codes. Scanning the QR code grants virtual money, which can be invested in favorite pitches. The pitch with the most investments wins, enhancing interaction and enjoyment for all participants.
+
+![Our App...](./Image1.jpeg "")
+![...in Action](./Image2.jpeg "")
+
 # CrowdCapital Investment Dashboard
 
 ## 01 token gen
