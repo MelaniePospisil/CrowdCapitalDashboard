@@ -18,7 +18,7 @@ This portion of the script handles the extraction of QR codes from a CSV file an
 - **Directory Creation:** Automatically creates a directory to store the QR code images if it doesn't already exist.
 - **Image Saving:** Decodes each QR code from Base64 format and saves it as a PNG image file. Each file is named after the corresponding user ID for easy identification.
 
-## Overview
+## admin analysis: The Dashboard
 This Python application is designed to provide a dynamic dashboard for visualizing investments and other key performance indicators for our START Munich investment app for pitching events using Streamlit. The app fetches the data from NocoDB, processes it, and visualizes it using Matplotlib and Streamlit.
 
 ## Prerequisites
